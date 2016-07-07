@@ -1,5 +1,9 @@
 // http
 var http = require("http");
+//Obteniendo informacion del entorno de ejecucion con respecto a la IP y al puerto que debemos usar en nuestro server
+var PORT = process.env.PORT || 3000;
+var IP =process.env.IP || '127.0.0.1';                     //permite acceeder a  las variables enrtono donde se esta ejecutando el proceso
+
 // Crear un servidor basico
 var server = http.createServer(function (req, res) {
     //Armar la respuesta http
@@ -11,12 +15,12 @@ var server = http.createServer(function (req, res) {
 
     });
     //Enviamos la respuesta
-    res.write("Hola mundo");
+    res.write("Quiñones Luna Jorge David");
     //Cerrar la conexion
     res.end();
 });
 //Poner a trabajar al server
-server.listen(3000,'127.0.0.1',function () {
-    console.log("> Server listening @http://localhost:3000...")
+server.listen(PORT,IP,function () {
+    console.log(`> Server listening @http://${IP}:${PORT} ...`)
 });
 
