@@ -6,5 +6,6 @@ JSON.parse(fs.readFileSync("./config/config.json","utf-8")
 );
 
 objconfig.IP = process.env.IP || objconfig.IP; 
-objconfig.PORT = process.env.IP || objconfig.PORT;
+objconfig.PORT = process.env.PORT || objconfig.PORT;
+
 module.exports = objconfig;
