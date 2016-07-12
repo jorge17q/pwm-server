@@ -1,7 +1,8 @@
 //Cargar los modulos necesarios para crear mi servidor estatico
 var fs = require ('fs'), 
-    config = require ('../config.js');
+    config = require ('../config/config.js');
     mime = require('mime');
+    console.log("> config: " +  config);
 //Esportar la funcion de servidor estatico
 exports.serve = function(url, res){
     //Acompletar el Path estatico
