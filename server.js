@@ -4,6 +4,7 @@ var fs = require('fs');
 var config =require("./config/config.js");
 var colors = require('colors');
 var staticServer = require ('./internals/static-server');
+var colors = require ("colors");
 //Obteniendo informacion del entorno de ejecucion con respecto a la IP y al puerto que debemos usar en nuestro server
 var PORT = config.PORT; 
 var IP = config.IP;  

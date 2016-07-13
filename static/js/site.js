@@ -1,5 +1,6 @@
 function hola(){
-    alert("Bienvenido a esta pagina ...");
+    sweetAlert("World places", "!Bienvenido a esta pagina!");
+    document.body.style.backgroundColor ="lightgreen"
 }
 
 function changeBkgColor(){
