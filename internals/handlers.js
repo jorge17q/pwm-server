@@ -21,6 +21,7 @@ module.exports = {
     },
     //dando de alta nueva ruta
     "/getfortune":function(req, res){
+        console.log("> se solicita fortuna...");
         //se obtiene el mensaje de la suerte
        // var fortunePaper = {
          //   "mensaje" :
