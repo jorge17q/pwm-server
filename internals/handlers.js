@@ -1,7 +1,7 @@
 //Manejadores de rutas virtuales
-
-var fechaDeNacimiento = new Date(1991,03,17,2,40);
 var fortune = require("./fortune");
+var fechaDeNacimiento = new Date(1991,03,17,2,40);
+
 module.exports = {
     "/edad/jorge-quinones" : function(req, res){
         res.writeHead(200, {
@@ -36,9 +36,10 @@ module.exports = {
         res.writeHead(200,{
             "Content-Type" : "application/json"
         });
-        var jsonResponse = JSON.stringify(fortunePaper);
+        console.log("contestando: " + fortunePaper);
+        //var jsonResponse = JSON.stringify(fortunePaper);
         //Respondemos el objetoRespuesta
-        res.end(jsonResponse);
+        res.end(fortunePaper);
     });
         }
 };
